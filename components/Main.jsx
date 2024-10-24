@@ -12,7 +12,7 @@ function Main({ children }) {
             {children}
             </section>
             <Drawer
-        title="Gala Education"
+        title="Marafiki Coffee marketing"
         placement={"left"}
         closable={false}
         onClose={()=>setOpenSidebar(false)}
@@ -20,7 +20,7 @@ function Main({ children }) {
         key={"left"}
         className="!sm:hidden !relative !px-0"
       >
-            Hello 
+            Coming soon!
 
         </Drawer>
         </main>
