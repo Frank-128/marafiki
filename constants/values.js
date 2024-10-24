@@ -1,12 +1,12 @@
 export const values = [
     {
       "title": "Transparency",
-      "desc": "At Rafiki Coffee Marketing, we understand that lasting partnerships are built on trust. That's why transparency is at the core of our operations. We prioritize open and honest communication between all stakeholders in the coffee value chain, ensuring clarity and accountability at every stage. By fostering this level of transparency, we not only build strong business relationships but also cultivate long-term partnerships that reflect the true meaning of 'rafiki'—friends and trusted allies.",
-      "variant": "transparencyk"
+      "desc": "At Rafiki Coffee Marketing, we understand that lasting partnerships are built on trust. Thats why transparency is at the core of our operations. We prioritize open and honest communication between all stakeholders in the coffee value chain, ensuring clarity and accountability at every stage. By fostering this level of transparency, we not only build strong business relationships but also cultivate long-term partnerships that reflect the true meaning of &apos;rafiki&apos;—friends and trusted allies.",
+      "variant": "transparency"
     },
     {
       "title": "Sustainability",
-      "desc": "One thing that every serious business aims to is –a sustainable one! We are dedicated to promoting environmentally responsible farming practices. Through regular farm visits with our team of agronomists, we work directly with producers to implement sustainable methods that protect the environment and enhance productivity. We assist farmers, cooperatives, and private estates in achieving eco-friendly certifications such as fair trade organic, Rain Forest Alliance, JAS certified certification which not only contribute to environmental conservation but also increase the market value of their coffee, ensuring long-term success and profitability for future generations.",
+      "desc": "One thing that every serious business aims to is a sustainable one! We are dedicated to promoting environmentally responsible farming practices. Through regular farm visits with our team of agronomists, we work directly with producers to implement sustainable methods that protect the environment and enhance productivity. We assist farmers, cooperatives, and private estates in achieving eco-friendly certifications such as fair trade organic, Rain Forest Alliance, JAS certified certification which not only contribute to environmental conservation but also increase the market value of their coffee, ensuring long-term success and profitability for future generations.",
       "variant": "sustainability"
     },
     {

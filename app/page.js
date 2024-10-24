@@ -144,7 +144,7 @@ export default function Home() {
                 </div>
             </div>
             {/* section 2 */}
-            <div className="mt-20">
+            <div className="mt-20" id="about-us">
                 <div className="flex sm:px-20 px-2 sm:flex-row flex-col">
                     <div className="relative basis-3/5">
                         <Image
@@ -152,12 +152,14 @@ export default function Home() {
                             width={200}
                             height={200}
                             className="h-[50vh] sm:w-[50vw] w-[75vw] object-cover border-4 border-white"
-                        />
+                            alt="coffee-plants"
+                       />
                         <Image
                             src="/community.jpeg"
                             width={200}
                             height={200}
                             className="h-[30vh] sm:w-[25vw] w-[40vw] absolute -bottom-5 sm:bottom-0 right-0 object-cover border-4 border-white"
+                            alt="community"
                         />
                     </div>
                     <div className="px-4 basis-2/5 ">
@@ -169,7 +171,7 @@ export default function Home() {
                             and international markets. Based in Tanzania, our
                             mission is to bring the world closer to the rich,
                             vibrant, and high-quality coffee grown in the heart
-                            of Tanzania's renowned coffee regions. We specialize
+                            of Tanzania&apos;s renowned coffee regions. We specialize
                             in enhancing the coffee value chain, ensuring that
                             every step from the farm to the buyer is carefully
                             managed, adding value and preserving quality. Our
@@ -193,14 +195,24 @@ export default function Home() {
                 <VissionCard />
 
             </div>
-            <div>
+            <div id="values">
                 <h1 className="font-black text-2xl text-center">Our Values</h1>
                 <div className="w-full grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 py-5 gap-y-7">
                     { values.map((item,i)=><ValuesCard key={i} title={item.title} desc={item.desc} variant={item.variant} />)}
                 
                 </div>
 
-             </div>   
+             </div>  
+              {/* Our services */}
+              <div id="services" className="relative">
+                <div className="font-black text-xl text-black text-center w-full py-2">Our Services</div>
+                <Image src={"/coffee-storage.jpg"} width={200} height={200} className="w-[80vw] h-[70vh] object-cover" alt="coffee storage" />
+                <div className="absolute">
+                </div>
+
+
+              </div>
+
         </div>
     );
 }

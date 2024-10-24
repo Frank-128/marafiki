@@ -23,6 +23,7 @@ function Navbar() {
     
     <HiMenuAlt3 fontSize={30} className='block text-redColor  sm:hidden text-3xl' onClick={()=>setOpenSidebar(true)} />
     <ul className="gap-x-5 sm:flex hidden">
+
     {
         navlinks.map((item,i)=>(
 
@@ -33,6 +34,7 @@ function Navbar() {
         </li>
         ))
     }
+
 </ul>
 
     
