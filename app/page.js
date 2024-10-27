@@ -1,10 +1,12 @@
 "use client"
 import MissionCard from "@/components/MissionCard";
+import ServiceCard from "@/components/ServiceCard";
 import ValuesCard from "@/components/ValuesCard";
 import VissionCard from "@/components/VisionCard";
+import { services } from "@/constants/services";
 import { values } from "@/constants/values";
 import Image from "next/image";
-
+import { FaPersonCircleCheck } from "react-icons/fa6";
 
 export default function Home() {
     return (
@@ -18,7 +20,7 @@ export default function Home() {
                     height={100}
                 />
                 <div className="absolute top-40 left-0  flex flex-col gap-2 sm:px-36 px-4">
-                    <span className="text-silver">Rafiki Coffee Marketing</span>
+                    <span className="font-black text-[#AACA33]">Rafiki Coffee Marketing</span>
                     <span className="text-white text-xl sm:text-6xl ">
                         A bright future for coffee marketing
                     </span>
@@ -204,11 +206,15 @@ export default function Home() {
 
              </div>  
               {/* Our services */}
-              <div id="services" className="relative">
+              <div id="services" className="py-4 ">
                 <div className="font-black text-xl text-black text-center w-full py-2">Our Services</div>
-                <Image src={"/coffee-storage.jpg"} width={200} height={200} className="w-[80vw] h-[70vh] object-cover" alt="coffee storage" />
-                <div className="absolute">
-                </div>
+                    
+                    <div className="sm:grid-cols-3 grid-cols-1 grid gap-8">
+                    {
+                        services.map((item,i)=><ServiceCard key={i} title={item.title} id={item.id} desc={item.description.substring(0,70)+"..."} icon={item.icon} />)
+                    }
+                    
+                    </div>    
 
 
               </div>
