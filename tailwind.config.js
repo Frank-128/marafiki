@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       colors:{
         redColor:"#6f0000"
-      }
+      },
+      backgroundImage: {
+        'footer': "url('/footer.jpeg')",
+      },
     },
   },
   plugins: [],

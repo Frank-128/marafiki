@@ -18,8 +18,8 @@ function Main({ children }) {
             <section className="bg-slate-200  pt-24 min-h-screen">
             {children}
             </section>
-            <footer className="h-[10vh] w-screen  bg-white text-center font-black">
-                    Marafiki Coffee Marking &copy; 2024
+            <footer  className="h-[50vh] w-screen bg-footer bg-cover flex justify-center items-center  text-white text-center font-black">
+                    Marafiki Coffee Marketing &copy; 2024
             </footer>
             <Drawer
         title={<div className="flex  items-center gap-2">

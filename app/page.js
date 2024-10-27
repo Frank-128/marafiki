@@ -7,8 +7,53 @@ import { services } from "@/constants/services";
 import { values } from "@/constants/values";
 import Image from "next/image";
 import { FaPersonCircleCheck } from "react-icons/fa6";
+import { useRef,useEffect } from "react";
+import gsap from "gsap";
 
 export default function Home() {
+    const textRef = useRef(null);
+    const spanRef = useRef(null);
+
+  useEffect(() => {
+    
+    if (textRef.current) {
+        
+        gsap.fromTo(
+            textRef.current,
+            { opacity: 0 }, 
+            { opacity: 1, duration: 4.5, ease: "power2.out" },
+        );
+    }
+    const theSpan = spanRef.current;
+
+    const animateIn = () => {
+        gsap.fromTo(
+            theSpan,
+            { x: -200, opacity: 0 }, // Start from off-screen left and invisible
+            { x: 0, opacity: 1, duration: 1.5, ease: "power2.out" } // End position and fade-in
+        );
+    };
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    animateIn();
+                }
+            });
+        },
+        { threshold: 0.5 } // Adjust threshold as needed
+    );
+
+    if (theSpan) observer.observe(theSpan);
+
+    return () => {
+        if (theSpan) observer.unobserve(theSpan);
+    };
+   
+  }, []);
+
+
     return (
         <div className="flex flex-col gap-10 items-center z-0">
             <div className="relative ">
@@ -21,10 +66,10 @@ export default function Home() {
                 />
                 <div className="absolute top-40 left-0  flex flex-col gap-2 sm:px-36 px-4">
                     <span className="font-black text-[#AACA33]">Rafiki Coffee Marketing</span>
-                    <span className="text-white text-xl sm:text-6xl ">
+                    <span ref={textRef} className="text-white text-xl sm:text-6xl ">
                         A bright future for coffee marketing
                     </span>
-                    <span className="text-white opacity-90 sm:text-2xl text-sm ">
+                    <span ref={spanRef} className="text-white opacity-90 sm:text-2xl text-sm ">
                         <b className="text-3xl">&ldquo;</b> We bring you the
                         best coffee services, <br /> quality provision of
                         services is our priority.
