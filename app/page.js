@@ -56,33 +56,27 @@ export default function Home() {
 
     return (
         <div className="flex flex-col gap-10 items-center z-0">
-            <div className="relative ">
+            <div className="relative -mt-24">
                 <Image
-                    className="h-[80vh] w-[100vw] object-cover relative"
-                    src="/coffee.jpeg"
+                    className="h-[100vh] w-[100vw] object-cover relative"
+                    src="/coffee-bg-2.jpg"
                     alt="coffee-seed"
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
                 />
-                <div className="absolute top-40 left-0  flex flex-col gap-2 sm:px-36 px-4">
-                    <span className="font-black text-[#AACA33]">Rafiki Coffee Marketing</span>
-                    <span ref={textRef} className="text-white text-xl sm:text-6xl ">
-                        A bright future for coffee marketing
-                    </span>
-                    <span ref={spanRef} className="text-white opacity-90 sm:text-2xl text-sm ">
-                        <b className="text-3xl">&ldquo;</b> We bring you the
-                        best coffee services, <br /> quality provision of
-                        services is our priority.
-                        <br /> Our dedication ensures sustainable practices that
-                        benefit both farmers and the environment
-                        <b className="text-3xl">&rdquo;</b>
+                <div className="absolute top-[50%] left-0  flex flex-col  py-4 gap-2 sm:px-36 px-4">
+                    <span className="font-black text-2xl sm:text-7xl text-[#AACA33]">Marafiki Coffee Marketing</span>
+                   
+                    <span ref={spanRef} className="text-white opacity-90 sm:text-5xl font-black text-sm ">
+                    Connecting Tanzania’s finest coffee to the world through a transparent, sustainable &amp; high
+                    quality coffee value chain.
                     </span>
                     <div className="bg-redColor  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-white px-2 py-1 w-32">
                         Discover More
                     </div>
                 </div>
 
-                <div className="p-5 absolute -bottom-20 left-[5vw] sm:left-[10vw] flex gap-5 justify-evenly w-[90vw]  sm:w-[77vw] bg-redColor h-[10rem]">
+                {/* <div className="p-5 absolute -bottom-20 left-[5vw] sm:left-[10vw] flex gap-5 justify-evenly w-[90vw]  sm:w-[77vw] bg-redColor h-[10rem]">
                     <button className="flex flex-col items-center justify-between">
                         <svg
                             fill="#AACA33"
@@ -188,7 +182,7 @@ export default function Home() {
                             We deliver coffee orders in time
                         </span>
                     </button>
-                </div>
+                </div> */}
             </div>
             {/* section 2 */}
             <div className="mt-20" id="about-us">
@@ -244,8 +238,8 @@ export default function Home() {
             </div>
             <div id="values">
                 <h1 className="font-black text-2xl text-center">Our Values</h1>
-                <div className="w-full grid grid-cols-1 sm:grid-cols-2 sm:gap-x-8 py-5 gap-y-7">
-                    { values.map((item,i)=><ValuesCard key={i} title={item.title} desc={item.desc} variant={item.variant} />)}
+                <div className="w-full grid grid-cols-1 sm:grid-cols-3 sm:gap-x-6 py-5 gap-y-7">
+                    { values.map((item,i)=><ValuesCard link={item.link} readMore={true} key={i} title={item.title} desc={item.desc.substring(0,200)+"..."} variant={item.variant} />)}
                 
                 </div>
 
