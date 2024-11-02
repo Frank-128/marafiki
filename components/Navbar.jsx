@@ -27,8 +27,8 @@ function Navbar() {
     {
         navlinks.map((item,i)=>(
 
-            <li key={i}>
-                   <Link className={`${pathname == item.link && "text-redColor underline underline-redColor"}`} href={item.link}>
+            <li key={i} className='text-xs'>
+                   <Link className={`${pathname == item.link && "text-redColor underline underline-offset-1 underline-redColor"}`} href={item.link}>
                    {item.name}
                    </Link>
         </li>

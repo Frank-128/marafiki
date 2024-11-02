@@ -65,10 +65,10 @@ export default function Home() {
                     height={200}
                 />
                 <div className="absolute top-[50%] left-0  flex flex-col  py-4 gap-2 sm:px-36 px-4">
-                    <span className="font-black text-2xl sm:text-7xl text-[#AACA33]">Marafiki Coffee Marketing</span>
+                    <span className="font-black text-3xl sm:text-7xl text-[#AACA33]">Marafiki Coffee Marketing</span>
                    
-                    <span ref={spanRef} className="text-white opacity-90 sm:text-5xl font-black text-sm ">
-                    Connecting Tanzania’s finest coffee to the world through a transparent, sustainable &amp; high
+                    <span ref={spanRef} className="text-white opacity-90 sm:text-5xl font-black text-2xl ">
+                    Connecting Tanzania&apros;s finest coffee to the world through a transparent, sustainable &amp; high
                     quality coffee value chain.
                     </span>
                     <div className="bg-redColor  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-white px-2 py-1 w-32">
