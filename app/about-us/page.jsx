@@ -18,6 +18,7 @@ function AboutUs() {
                         src={"/coffee_people.jpg"}
                         width={200}
                         height={200}
+                        alt="coffee people"
                         className="w-full  h-[100vh] object-cover"
                     />
 

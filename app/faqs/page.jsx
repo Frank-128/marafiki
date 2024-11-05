@@ -21,7 +21,7 @@ function FAQS() {
   <div className="relative z-10 flex sm:h-[70vh] h-[100vh] sm:flex-row  flex-col items-center">
           <div className='text-center sm:basis-1/2 basis-1/3 flex h-full justify-center sm:gap-y-8 gap-y-4 flex-col'>
             <h1 className='text-white text-4xl'>Get in touch with us!</h1>
-            <p className='text-[#d3d3d3] group-hover:text-white group-hover:font-bold'>We'd love to hear from you. Whether you have question about us, our coffee,want to explore partnership opportunites or simply wish to connect please fill out the form below</p>
+            <p className='text-[#d3d3d3] group-hover:text-white group-hover:font-bold'>We&apos;d love to hear from you. Whether you have question about us, our coffee,want to explore partnership opportunites or simply wish to connect please fill out the form below</p>
           </div>
           <div className='sm:basis-1/2 basis-2/3 px-5  space-y-2 sm:space-y-0 flex-1'>
             <div>
