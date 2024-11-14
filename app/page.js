@@ -87,14 +87,14 @@ export default function Home() {
                             src="/coffee_plants.jpeg"
                             width={200}
                             height={200}
-                            className="h-[50vh] sm:w-[50vw] w-[75vw] object-cover border-4 border-white"
+                            className="h-[50vh] sm:h-[75vh] sm:w-[50vw] w-[75vw] object-cover border-4 border-white"
                             alt="coffee-plants"
                        />
                         <Image
                             src="/community.jpeg"
                             width={200}
                             height={200}
-                            className="h-[30vh] sm:w-[25vw] w-[40vw] absolute -bottom-5 sm:bottom-0 right-0 object-cover border-4 border-white"
+                            className="h-[30vh] sm:w-[25vw] w-[40vw] absolute -bottom-5 sm:bottom-20 right-0 object-cover border-4 border-white"
                             alt="community"
                         />
                     </div>
@@ -102,23 +102,15 @@ export default function Home() {
                         <h1 className="text-redColor font-extrabold">About Us!</h1>
 
                         <p>
-                            At Rafiki Coffee Marketing, we are committed to
-                            bridging the gap between Tanzanian coffee producers
-                            and international markets. Based in Tanzania, our
-                            mission is to bring the world closer to the rich,
-                            vibrant, and high-quality coffee grown in the heart
-                            of Tanzania&apos;s renowned coffee regions. We specialize
-                            in enhancing the coffee value chain, ensuring that
-                            every step from the farm to the buyer is carefully
-                            managed, adding value and preserving quality. Our
-                            desire to keep the coffee chain in flow is what sets
-                            us apart, we believe flow is everything! Our name,
-                            “Rafiki,” meaning “friend” in Swahili, symbolizes
-                            the trust and mutual benefit that we aim to
-                            cultivate between producers and buyers. We focus on
-                            creating meaningful partnerships, grounded in
-                            ethical trade practices, fair pricing, and a shared
-                            commitment to quality and sustainability.
+                        We’re a team of passionate coffee enthusiasts, deeply invested in the journey of Tanzanian coffee, from farm to cup. For us, coffee isn’t just a product; it’s a commitment to the future of the entire coffee value chain. One question drives us forward: What does the future hold for Tanzanian coffee?
+
+ 
+
+The industry faces significant challenges, particularly when it comes to reliability and trust in international transactions. We understand the difficulties our buyers encounter in finding dependable partners and recognize the value our producers bring to this global market. That’s why we operate with a foundation of transparency, ensuring that every step of our business reflects fairness, quality, and a focus on sustainability.
+
+ 
+
+Marafiki Coffee Marketing was built to bridge the gap between global buyers and Tanzanian producers. Our mission is about more than transactions; it’s about building long-term relationships that uplift communities and ensure a steady, reliable coffee supply for years to come. So whether you’re a small business or a large roaster looking for a consistent source of premium Tanzanian coffee, we’re here to connect, support, and grow together as friends (marafiki). Let&apos;s embark on this journey together
                         </p>
                     </div>
                 </div>

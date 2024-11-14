@@ -6,7 +6,7 @@ import React from 'react'
 import { HiMenuAlt3 } from "react-icons/hi";
 import { useAppContext } from './context/AppContext';
 const { navlinks } = require("@/constants/links")
-
+import logo from '../app/icon.png'
 
 function Navbar() {
 
@@ -17,7 +17,7 @@ function Navbar() {
 
 <nav className="w-[100vw] !z-[99] fixed h-24 border-gray-600 border-b-[0.8px] items-center bg-white justify-between flex sm:px-36 px-2 py-6">
     <div className="flex  items-center gap-2">
-        <Image width={100} height={100} className="w-12 h-12 object-contain" src="/coffee-beans.png" alt="logo" />
+        <Image width={100} height={100} className="w-12 h-12 object-contain" src={logo} alt="logo" />
         <span className="font-bold">Marafiki Coffee Marketing</span>
     </div>
     

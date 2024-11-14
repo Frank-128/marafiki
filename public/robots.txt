@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://marafikicoffeemarketing.co.tz
+
+# Sitemaps
+Sitemap: https://marafikicoffeemarketing.co.tz/sitemap.xml

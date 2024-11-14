@@ -6,9 +6,20 @@ import { FaBullseye } from "react-icons/fa";
 function Services() {
     return (
         <div className="sm:px-20 px-10 flex flex-col sm:gap-6 gap-3 sm:py-14 py-6">
-            <h1 className="font-bold text-center sm:text-xl text-lg">
-                Our Services
-            </h1>
+            <section class="our-services-welcome text-center p-6 ">
+  <h2 class="text-3xl font-bold text-brown-800">Welcome to Marafiki Coffee Marketing Services</h2>
+  <p class="text-lg text-gray-700 mt-4">
+    At Marafiki Coffee Marketing, we are passionate about connecting Tanzania&apos;s finest coffee producers with global and local markets. 
+    Our services are designed to support every step of the coffee journey, from the farmer&apos;s first harvest to the final cup. Whether you&apos;re a coffee grower, buyer, or enthusiast, we are committed to providing exceptional quality, transparency, and sustainability at every stage.
+  </p>
+  <p class="text-lg text-gray-700 mt-4">
+    With a deep-rooted belief in empowering our farmers, we offer specialized services in coffee sourcing, quality enhancement, auction facilitation, and market expansion. Our dedication goes beyond just coffee; we are here to build strong, fair, and long-lasting relationships across the entire coffee supply chain. Every partnership we create brings us closer to a world where Tanzanian coffee is celebrated and valued globally.
+  </p>
+  <p class="text-lg text-gray-700 mt-4">
+    Explore our services to discover how Marafiki Coffee Marketing can support your goals and help elevate Tanzania&apos;s coffee to new heights.
+  </p>
+</section>
+
             {services.map((item, i) => (
                 <div
                     key={i}

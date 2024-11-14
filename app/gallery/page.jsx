@@ -17,8 +17,20 @@ function Gallery() {
 "/company photos/transport.jpg"
     ]
   return (
-    <div className='px-4 py-2'>
-        <h1 className='text-center font-black text-2xl text-redColor'>Our gallery</h1>
+    <div className='px-4 py-2 space-y-16'>
+        <section class="our-gallery-welcome text-center p-6 ">
+  <h2 class="text-3xl font-bold text-brown-800">Explore the Marafiki Coffee Journey</h2>
+  <p class="text-lg text-gray-700 mt-4">
+    Welcome to our gallery, where we capture the vibrant world of Marafiki Coffee Marketing. Here, we showcase the essence of Tanzania’s coffee culture, from the lush, green coffee farms to the bustling marketplaces and every step in between. 
+  </p>
+  <p class="text-lg text-gray-700 mt-4">
+    Every image reflects our commitment to quality, sustainability, and community, highlighting the dedication of our farmers and the journey each bean takes to reach your cup. Take a visual tour and immerse yourself in the beauty of Tanzanian coffee production, the proud faces behind every harvest, and the unique landscapes that make our coffee truly exceptional.
+  </p>
+  <p class="text-lg text-gray-700 mt-4">
+    We invite you to explore these moments, as each one tells a story of passion, resilience, and the shared journey from farm to table.
+  </p>
+</section>
+
         <Carousel arrows autoplay >
             {
                 images.map((item,i)=>(<div key={i}>
@@ -27,7 +39,7 @@ function Gallery() {
             }
         </Carousel>
         <h1 className='font-black text-center py-3 text-redColor'>Take a look at our daily activities </h1>
-        <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-4 gap-y-12'>
         {
                 images.map((item,i)=>(<div key={i}>
                     <Image alt="image gallery" src={item} className='lg:w-[25vw] md:w-[30vw] sm:w-[50vw] w-[90vw] h-[25vh] object-cover' width={200} height={200} />
