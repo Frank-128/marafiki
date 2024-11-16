@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        redColor:"#6f0000"
+        redColor:"#6f0000",
+        yellowColor:"#f8ac07",
+        greenColor:"#011d08",
+        deepGreenColor:"#011206",
       },
       backgroundImage: {
         'footer': "url('/footer.jpeg')",

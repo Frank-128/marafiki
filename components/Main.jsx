@@ -8,7 +8,7 @@ import { navlinks } from "@/constants/links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import logo from '../app/icon.png'
+
 
 function Main({ children }) {
     const {openSidebar,setOpenSidebar} = useAppContext()
@@ -17,7 +17,7 @@ function Main({ children }) {
         
         <main>
             <Navbar />
-            <section className="bg-slate-200  pt-24 min-h-screen">
+            <section className="pt-24 min-h-screen">
             {children}
             </section>
             <section className="w-screen bg-black/60 px-4 flex items-center flex-col justify-center">
@@ -39,7 +39,7 @@ function Main({ children }) {
             </section>
             <footer  className="min-h-[50vh] w-screen bg-footer bg-cover  flex flex-col">
                 <div className="flex flex-col gap-y-4 sm:flex-row justify-around  basis-5/6 items-start py-4 px-10 sm:items-center  text-white text-center font-black">
-                    <Image alt={'logo'} src={logo} width={200} height={200} className="sm:w-40 sm:h-40 w-20 h-20 p-2 bg-white rounded-sm shadow-blue-200 shadow-sm object-contain conver" />
+                    <Image alt={'logo'} src={"/logo.png"} width={200} height={200} className="sm:w-40 sm:h-40 w-20 h-20 p-2 bg-white rounded-sm shadow-blue-200 shadow-sm object-contain conver" />
                     <div>
                        <div className="flex flex-col items-start">
                         <h1 className="font-bold">Quick Links</h1>
