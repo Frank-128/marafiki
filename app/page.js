@@ -6,13 +6,57 @@ import VissionCard from "@/components/VisionCard";
 import { services } from "@/constants/services";
 import { values } from "@/constants/values";
 import Image from "next/image";
-import { FaPersonCircleCheck } from "react-icons/fa6";
 import { useRef,useEffect } from "react";
 import gsap from "gsap";
+import {Carousel} from "antd";
+import HomeCarousel from "@/components/HomeCarousel";
+
 
 export default function Home() {
     const textRef = useRef(null);
     const spanRef = useRef(null);
+    const aboutUsRef = useRef(null);
+
+    const serviceCardsRef = useRef([]);
+    const sectionRef = useRef(null); // Reference to the section
+
+    useEffect(() => {
+        // Set up the Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Create a GSAP timeline when the section is in view
+                    const tl = gsap.timeline();
+
+                    // Animate each service card with a delay
+                    serviceCardsRef.current.forEach((card, index) => {
+                        tl.from(card, {
+                            opacity: 0,
+                            y: 20,  // Optional: animate vertical movement
+                            duration: 0.2,  // 1 second duration for fade-in
+                            delay: 0.1,  // 0.1 seconds delay for each card
+                            ease: 'power2.out',  // Easing for smoothness
+                        });
+                    });
+
+                    // Once the animation is complete, we can unobserve the section
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of the section is in view
+
+        const currentSectionRef = sectionRef.current;
+
+        if (currentSectionRef) {
+            observer.observe(currentSectionRef);
+        }
+
+        return () => {
+            if (currentSectionRef) {
+                observer.unobserve(currentSectionRef);
+            }
+        };
+    }, []);
 
   useEffect(() => {
     
@@ -24,13 +68,23 @@ export default function Home() {
             { opacity: 1, duration: 4.5, ease: "power2.out" },
         );
     }
+
+  if (aboutUsRef.current) {
+
+          gsap.fromTo(
+              aboutUsRef.current,
+              { opacity: 0 },
+              { opacity: 1, duration: 4.5, ease: "power2.out" },
+          );
+      }
+
     const theSpan = spanRef.current;
 
     const animateIn = () => {
         gsap.fromTo(
             theSpan,
-            { x: -200, opacity: 0 }, // Start from off-screen left and invisible
-            { x: 0, opacity: 1, duration: 1.5, ease: "power2.out" } // End position and fade-in
+            { y: -200, opacity: 0 }, // Start from off-screen left and invisible
+            { y: 0, opacity: 1, duration: 1.5, ease: "power2.out" } // End position and fade-in
         );
     };
 
@@ -54,90 +108,101 @@ export default function Home() {
   }, []);
 
 
+
+
+
     return (
-        <div className="flex flex-col gap-10 items-center z-0">
-            <div className="relative -mt-24">
-                <Image
-                    className="h-[100vh] w-[100vw] object-cover relative"
-                    src="/coffee-bg-2.jpg"
-                    alt="coffee-seed"
-                    width={1920}
-                    height={1080}
-                    quality={100}
-                />
-                <div className="absolute top-[50%] left-0  flex flex-col  py-4 gap-2 sm:px-36 px-4">
-                    <span className="font-black text-3xl sm:text-7xl text-[#AACA33]">Marafiki Coffee Marketing</span>
-                   
-                    <span ref={spanRef} className="text-white opacity-90 sm:text-5xl font-black text-2xl ">
+        <div  className="flex flex-col  items-center z-0">
+            <div
+                style={{
+                    backgroundImage: `url("/community.jpeg")`,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize:"cover",
+                    height: "100vh",
+                    width: "100%",
+                }}
+                className={"fixed -z-20 inset-0 top-0 left-0"}
+            />
+            <div className="relative w-screen -mt-24">
+                <div className={""}>
+
+
+                <HomeCarousel />
+                </div>
+                <div className="absolute top-[10%] left-0  items-center  flex flex-col  py-4 gap-8 sm:px-36 px-4">
+                    <span className="font-light text-4xl sm:text-2xl text-yellowColor">Marafiki Coffee Marketing</span>
+                    <span ref={spanRef} className="text-white opacity-90 sm:text-7xl text-center font-black text-2xl ">Crafting a Global Coffee Community, One Relationship at a Time</span>
+                    <span className="text-[#d9d9d9] opacity-90 sm:text-xl font-light text-sm text-center">
                     Connecting Tanzania&apos;s finest coffee to the world through a transparent, sustainable &amp; high
                     quality coffee value chain.
                     </span>
-                    <div className="bg-redColor  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-white px-2 py-1 w-32">
+                    <div
+                        className="border-white border-2  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-white px-2 py-1 w-32">
                         Discover More
                     </div>
                 </div>
 
-        
+
             </div>
             {/* section 2 */}
-            <div className="mt-20" id="about-us">
+            <div className="" id="about-us">
                 <div className="flex sm:px-20 px-2 sm:flex-row flex-col">
-                    <div className="relative basis-3/5">
-                        <Image
-                            src="/coffee_plants.jpeg"
-                            width={200}
-                            height={200}
-                            className="h-[50vh] sm:h-[75vh] sm:w-[50vw] w-[75vw] object-cover border-4 border-white"
-                            alt="coffee-plants"
-                       />
-                        <Image
-                            src="/community.jpeg"
-                            width={200}
-                            height={200}
-                            className="h-[30vh] sm:w-[25vw] w-[40vw] absolute -bottom-5 sm:bottom-20 right-0 object-cover border-4 border-white"
-                            alt="community"
-                        />
-                    </div>
-                    <div className="px-4 basis-2/5 ">
-                        <h1 className="text-redColor font-extrabold">About Us!</h1>
 
-                        <p>
-                        We’re a team of passionate coffee enthusiasts, deeply invested in the journey of Tanzanian coffee, from farm to cup. For us, coffee isn’t just a product; it’s a commitment to the future of the entire coffee value chain. One question drives us forward: What does the future hold for Tanzanian coffee?
+                    <div className="bg-greenColor -mx-20 flex sm:flex-row flex-col px-4 py-10">
+                        <div className={"basis-1/2 space-y-8"}>
+                        <h2 className=" font-semibold text-2xl text-yellowColor">About Us!</h2>
+                            <h1 className={"text-5xl text-white "}>
+                                A team of passionate coffee enthusiasts
+                            </h1>
+                        </div>
 
- 
+                        <p ref={aboutUsRef} className={"basis-1/2 px-3 text-white"}>
+                            We’re a team of passionate coffee enthusiasts, deeply invested in the journey of Tanzanian
+                            coffee, from farm to cup. For us, coffee isn’t just a product; it’s a commitment to the
+                            future of the entire coffee value chain. One question drives us forward: What does the
+                            future hold for Tanzanian coffee?
 
-The industry faces significant challenges, particularly when it comes to reliability and trust in international transactions. We understand the difficulties our buyers encounter in finding dependable partners and recognize the value our producers bring to this global market. That’s why we operate with a foundation of transparency, ensuring that every step of our business reflects fairness, quality, and a focus on sustainability.
-
- 
-
-Marafiki Coffee Marketing was built to bridge the gap between global buyers and Tanzanian producers. Our mission is about more than transactions; it’s about building long-term relationships that uplift communities and ensure a steady, reliable coffee supply for years to come. So whether you’re a small business or a large roaster looking for a consistent source of premium Tanzanian coffee, we’re here to connect, support, and grow together as friends (marafiki). Let&apos;s embark on this journey together
+                            The industry faces significant challenges, particularly when it comes to reliability and
+                            trust in international transactions.<div className={"my-8"}/> We understand the difficulties our buyers
+                            encounter in finding dependable partners and recognize the value our producers bring to this
+                            global market. That’s why we operate with a foundation of transparency, ensuring that every
+                            step of our business reflects fairness, quality, and a focus on sustainability.
+                            <div className={"my-8"}/> Marafiki Coffee Marketing was built to bridge the gap between global buyers and
+                            Tanzanian producers. Our mission is about more than transactions; it’s about building
+                            long-term relationships that uplift communities and ensure a steady, reliable coffee supply
+                            for years to come. So whether you’re a small business or a large roaster looking for a
+                            consistent source of premium Tanzanian coffee, we’re here to connect, support, and grow
+                            together as friends (marafiki). Let&apos;s embark on this journey together
                         </p>
                     </div>
                 </div>
             </div>
             {/* section 3 */}
-            <div className="py-10 grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-10">
+            <div className="py-10 bg-deepGreenColor -mx-20 w-full flex items-center gap-10 justify-center ">
                 
 
                 <MissionCard/>
                 <VissionCard />
 
             </div>
-            <div id="values">
-                <h1 className="font-black text-2xl text-center">Our Values</h1>
-                <div className="w-full grid grid-cols-1 sm:grid-cols-3 sm:gap-x-6 py-5 gap-y-7">
+            <div id="values" className={"bg-black/80 -mx-20 py-10 w-full"}>
+                <h1 className="font-black  text-center text-3xl text-white">Our Values</h1>
+                <div className="w-full flex items-center justify-around py-5 gap-y-7">
                     { values.map((item,i)=><ValuesCard link={item.link} readMore={true} key={i} title={item.title} desc={item.desc.substring(0,200)+"..."} variant={item.variant} />)}
                 
                 </div>
 
              </div>  
               {/* Our services */}
-              <div id="services" className="py-4 ">
-                <div className="font-black text-xl text-black text-center w-full py-2">Our Services</div>
-                    
-                    <div className="sm:grid-cols-3 grid-cols-1 grid gap-8">
+              <div id="services" className="py-24 bg-deepGreenColor w-full flex -mx-20 justify-between">
+                <div className={'px-5 py-2'}>
+                  <div className="font-black text-xl basis-1/4 text-yellowColor  text-center w-full py-2">Our Services</div>
+                    <div className={"text-white text-4xl text-center font-black"}>From Farm to Cup,<br/> We Deliver Quality</div>
+                </div>
+
+                    <div ref={sectionRef} className="sm:grid-cols-3 basis-3/4 grid-cols-1 grid gap-8">
                     {
-                        services.map((item,i)=><ServiceCard key={i} title={item.title} id={item.id} desc={item.description.substring(0,70)+"..."} icon={item.icon} />)
+                        services.map((item,i)=><ServiceCard ref={(el) => (serviceCardsRef.current[i] = el)} key={i} title={item.title} id={item.id} desc={item.description.substring(0,70)+"..."} icon={item.icon} className="transition-all duration-500 ease-out opacity-0 transform translate-y-4" />)
                     }
                     
                     </div>    

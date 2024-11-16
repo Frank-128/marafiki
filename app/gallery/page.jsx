@@ -18,15 +18,15 @@ function Gallery() {
     ]
   return (
     <div className='px-4 py-2 space-y-16'>
-        <section class="our-gallery-welcome text-center p-6 ">
-  <h2 class="text-3xl font-bold text-brown-800">Explore the Marafiki Coffee Journey</h2>
-  <p class="text-lg text-gray-700 mt-4">
+        <section className="our-gallery-welcome text-center p-6 ">
+  <h2 className="text-3xl font-bold text-brown-800">Explore the Marafiki Coffee Journey</h2>
+  <p className="text-lg text-gray-700 mt-4">
     Welcome to our gallery, where we capture the vibrant world of Marafiki Coffee Marketing. Here, we showcase the essence of Tanzania’s coffee culture, from the lush, green coffee farms to the bustling marketplaces and every step in between. 
   </p>
-  <p class="text-lg text-gray-700 mt-4">
+  <p className="text-   lg text-gray-700 mt-4">
     Every image reflects our commitment to quality, sustainability, and community, highlighting the dedication of our farmers and the journey each bean takes to reach your cup. Take a visual tour and immerse yourself in the beauty of Tanzanian coffee production, the proud faces behind every harvest, and the unique landscapes that make our coffee truly exceptional.
   </p>
-  <p class="text-lg text-gray-700 mt-4">
+  <p className="text-lg text-gray-700 mt-4">
     We invite you to explore these moments, as each one tells a story of passion, resilience, and the shared journey from farm to table.
   </p>
 </section>
