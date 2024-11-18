@@ -6,7 +6,7 @@ function MissionCard() {
     <div className="relative w-[80vw] sm:w-[30vw]  rounded-lg shadow-md p-6">
     
     {/* Content inside the card */}
-      <div className="flex flex-col items-center px-8 gap-10">
+      <div className="flex flex-col items-center sm:px-8 px-2 gap-10">
         <Image src={'/svgs/dart.svg'} width={50} height={50} alt="mission"/>
         <h1 className="font-black text-2xl text-yellowColor">Mission</h1>
         <h3 className="text-center text-lg text-white">
