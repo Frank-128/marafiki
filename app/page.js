@@ -119,7 +119,7 @@ export default function Home() {
                     backgroundRepeat: "no-repeat",
                     backgroundSize:"cover",
                     height: "100vh",
-                    width: "100%",
+                    width: "100vw",
                 }}
                 className={"fixed -z-20 inset-0 top-0 left-0"}
             />
@@ -148,15 +148,15 @@ export default function Home() {
             <div className="" id="about-us">
                 <div className="flex sm:px-20 px-2 sm:flex-row flex-col">
 
-                    <div className="bg-greenColor -mx-20 flex sm:flex-row flex-col px-4 py-10">
+                    <div className="bg-greenColor sm:-mx-20 -mx-2 flex sm:flex-row flex-col px-4 py-10">
                         <div className={"basis-1/2 space-y-8"}>
                         <h2 className=" font-semibold text-2xl text-yellowColor">About Us!</h2>
-                            <h1 className={"text-5xl text-white "}>
+                            <h1 className={"sm:text-5xl text-2xl text-white "}>
                                 A team of passionate coffee enthusiasts
                             </h1>
                         </div>
 
-                        <p ref={aboutUsRef} className={"basis-1/2 px-3 text-white"}>
+                        <div ref={aboutUsRef} className={"basis-1/2 px-3 text-white"}>
                             We’re a team of passionate coffee enthusiasts, deeply invested in the journey of Tanzanian
                             coffee, from farm to cup. For us, coffee isn’t just a product; it’s a commitment to the
                             future of the entire coffee value chain. One question drives us forward: What does the
@@ -173,28 +173,28 @@ export default function Home() {
                             for years to come. So whether you’re a small business or a large roaster looking for a
                             consistent source of premium Tanzanian coffee, we’re here to connect, support, and grow
                             together as friends (marafiki). Let&apos;s embark on this journey together
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
             {/* section 3 */}
-            <div className="py-10 bg-deepGreenColor -mx-20 w-full flex items-center gap-10 justify-center ">
+            <div className="py-10 bg-deepGreenColor sm:-mx-20 w-full flex flex-col sm:flex-row items-center gap-10 justify-center ">
                 
 
                 <MissionCard/>
                 <VissionCard />
 
             </div>
-            <div id="values" className={"bg-black/80 -mx-20 py-10 w-full"}>
+            <div id="values" className={"bg-black/80 sm:-mx-20 py-10 w-full"}>
                 <h1 className="font-black  text-center text-3xl text-white">Our Values</h1>
-                <div className="w-full flex items-center justify-around py-5 gap-y-7">
+                <div className="w-full flex items-center flex-col sm:flex-row justify-around py-5 gap-y-7">
                     { values.map((item,i)=><ValuesCard link={item.link} readMore={true} key={i} title={item.title} desc={item.desc.substring(0,200)+"..."} variant={item.variant} />)}
                 
                 </div>
 
              </div>  
               {/* Our services */}
-              <div id="services" className="py-24 bg-deepGreenColor w-full flex -mx-20 justify-between">
+              <div id="services" className="py-24 bg-deepGreenColor w-full flex flex-col sm:flex-row sm:-mx-20 -mx-2 items-center  justify-between">
                 <div className={'px-5 py-2'}>
                   <div className="font-black text-xl basis-1/4 text-yellowColor  text-center w-full py-2">Our Services</div>
                     <div className={"text-white text-4xl text-center font-black"}>From Farm to Cup,<br/> We Deliver Quality</div>
