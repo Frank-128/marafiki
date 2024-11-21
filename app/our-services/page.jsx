@@ -31,17 +31,20 @@ function Services() {
                     key={i}
                     className={`flex flex-col sm:flex-row ${i % 2 === 0 && 'sm:flex-row-reverse'} gap-3 pb-3 border-b-[0.8px] border-gray-400`}
                     >
+                    <div className={"relative basis-1/2 w-[90vw] group sm:w-[30vw] cursor-pointer h-[40vh]"}>
+
                         <Image
                             src={item.img}
                             alt="image data"
                              width={200}
                             height={200}
-                            className="basis-1/2 w-[90vw] sm:w-[30vw] h-[40vh] object-cover"
+                            className="h-full w-full object-cover group-hover:opacity-20"
                         />
-                        <div id={item.id} className={"flex flex-col basis-1/2 px-2 "}>
-                            <h1 className="font-black sm:text-xl text-lg text-yellowColor">
+                            <h1 className="font-bold absolute group-hover:font-black  bottom-5 place-content-center left-1/4 sm:text-xl text-lg text-yellowColor">
                                 {item.title}
                             </h1>
+                    </div>
+                        <div id={item.id} className={"flex flex-col basis-1/2 px-2 "}>
                             <p className={'text-[#d9d9d9]'}>{item.description}</p>
                         </div>
                     </div>
