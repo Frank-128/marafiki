@@ -15,17 +15,18 @@ function Navbar() {
 
   return (
 
-<nav className="w-screen !z-[99] absolute bg-transparent h-24   items-center  justify-between flex  px-2 py-6">
-    <div className="flex  items-center gap-2 text-white">
+<nav className="w-screen !z-[99] absolute bg-transparent h-24    sm:items-center  justify-between flex  px-2 py-6">
+    <div className="flex  sm:items-center max-sm:justify-between gap-2  text-white">
         <Image width={100} height={100} className="w-12 h-12 object-contain" src={"/logo.png"} alt="logo" />
        <div className={'flex flex-col items-center'}>
         <span className="font-bold text-xl leading-none">Marafiki</span>
         <span className="font-light text-sm text-[#d9d9d9] "> Coffee Marketing</span>
        </div>
     </div>
-    
-    <HiMenuAlt3 fontSize={30} className='block text-redColor  sm:hidden text-3xl' onClick={()=>setOpenSidebar(true)} />
-    <ul className="gap-x-10 sm:flex hidden">
+
+    <HiMenuAlt3 fontSize={30} className='block text-redColor   text-3xl' onClick={()=>setOpenSidebar(true)} />
+
+    <ul className="sm:gap-x-10 sm:flex hidden">
 
     {
         navlinks.map((item,i)=>(
@@ -39,7 +40,7 @@ function Navbar() {
     }
 
 </ul>
-<div/>
+<div className={'max-sm:hidden'}/>
     
 
 </nav>
