@@ -75,9 +75,9 @@ function Main({ children }) {
             </footer>
             <Drawer
                 title={<div className="flex  items-center gap-2">
-                    <Image width={100} height={100} className="w-12 h-12 object-contain" src="/coffee-beans.png"
+                    <Image width={100} height={100} className="w-12 h-12 object-contain" src="/logo.png"
                            alt="logo"/>
-                    <span className="font-bold">Rafiki Coffee Marketing</span>
+                    <span className="font-bold">Marafiki Coffee Marketing</span>
                 </div>}
                 placement={"left"}
                 closable={false}

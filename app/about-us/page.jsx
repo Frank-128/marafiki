@@ -147,94 +147,120 @@ function AboutUs() {
             </div>
             <div className="space-y-4 bg-greenColor pt-24 pb-12">
                 <h1 className="font-black sm:text-5xl text-3xl text-center text-yellowColor">Impact</h1>
-                <div className="space-y-10">
+                <div className="space-y-16">
 
                     {/* First Section */}
                     <div>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Image
-                                src={"/women-coffee.jpg"}
-                                alt={"coffee women"}
-                                width={200}
-                                height={200}
-                                className="sm:w-[45vw] w-[90vw] h-[50vh] basis-1/2 object-contain"
-                            />
-                            <div className="basis-1/2 py-4 px-2">
-                                <h1 className="font-semibold text-yellowColor">
-                                    Empowering Women &amp; Ensuring Inclusivity
-                                </h1>
-                                <p className="text-white">
-                                    We believe that a sustainable coffee industry is one where everyone has a voice.
-                                    Marafiki Coffee Marketing proudly champions gender equality by working closely with
-                                    women producers, ensuring they have equal access to resources, decision-making, and
-                                    market opportunities. More women have been enrolled in farmer&apos;s AMCOSes for a
-                                    better representative workforce. We pioneer inclusivity across our supply chain,
-                                    supporting diverse communities and providing a platform for all growers to thrive
-                                    and contribute to the future of coffee.
-                                </p>
+                            <div className={"relative basis-1/2 w-[90vw] group sm:w-[30vw] cursor-pointer h-[40vh]"}>
+                                <Image
+                                    src={"/women-coffee.jpg"}
+                                    alt={"coffee women"}
+                                    width={200}
+                                    height={200}
+                                    className="sm:w-[45vw] w-[90vw] h-[50vh] basis-1/2 object-contain group-hover:opacity-20"
+                                />
+                                    <h1 className="font-bold absolute group-hover:font-black  bottom-5 place-content-center left-8 sm:text-xl text-lg text-yellowColor">
+                                        Empowering Women &amp; Ensuring Inclusivity
+                                    </h1>
+                            </div>
+                                <div className="basis-1/2 py-4 px-2">
+                                    <p className="text-white">
+                                        We believe that a sustainable coffee industry is one where everyone has a voice.
+                                        Marafiki Coffee Marketing proudly champions gender equality by working closely
+                                        with
+                                        women producers, ensuring they have equal access to resources, decision-making,
+                                        and
+                                        market opportunities. More women have been enrolled in farmer&apos;s AMCOSes for
+                                        a
+                                        better representative workforce. We pioneer inclusivity across our supply chain,
+                                        supporting diverse communities and providing a platform for all growers to
+                                        thrive
+                                        and contribute to the future of coffee.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    {/* Second Section */}
-                    <div>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Image
-                                src={"/coffee-climate.jpg"}
-                                alt={"coffee climate resilient"}
-                                width={200}
-                                height={200}
-                                className="sm:w-[45vw] w-[90vw] h-[50vh] basis-1/2 object-contain"
-                            />
-                            <div className="basis-1/2 py-4 px-2">
-                                <h1 className="font-semibold text-yellowColor">
-                                    Innovating for a Climate-Resilient Future
-                                </h1>
+                        {/* Second Section */}
+                        <div>
+                            <div className="flex flex-col sm:flex-row gap-4">
+                                <div
+                                    className={"relative basis-1/2 w-[90vw] group sm:w-[30vw] cursor-pointer h-[40vh]"}>
+                                    <Image
+                                        src={"/coffee-climate.jpg"}
+                                        alt={"coffee climate resilient"}
+                                        width={200}
+                                        height={200}
+                                        className="sm:w-[45vw] w-[90vw] h-[50vh] basis-1/2 object-contain group-hover:opacity-20"
+                                    />
+                                    <h1 className="font-bold absolute group-hover:font-black  bottom-5 place-content-center left-8 sm:text-xl text-lg text-yellowColor">
+                                        Innovating for a Climate-Resilient Future
+                                    </h1>
+                                </div>
+                                <div className="basis-1/2 py-4 px-2">
                                 <p className="text-white">
-                                    In the face of climate change, we know that every step toward eco-friendly farming
-                                    counts. Through our agronomists, we implement innovative, eco-conscious farming
-                                    practices that help our producers mitigate environmental impact. Emphasis to organic
-                                    soil management, investing in methods that reduce our carbon footprint is our top
-                                    priority for the better future of our environment and coffee.
-                                </p>
+                                            In the face of climate change, we know that every step toward eco-friendly
+                                            farming
+                                            counts. Through our agronomists, we implement innovative, eco-conscious
+                                            farming
+                                            practices that help our producers mitigate environmental impact. Emphasis to
+                                            organic
+                                            soil management, investing in methods that reduce our carbon footprint is
+                                            our top
+                                            priority for the better future of our environment and coffee.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    {/* Third Section */}
-                    <div>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <Image
-                                src={"/coffee-2.png"}
-                                alt={"coffee eudr"}
-                                width={200}
-                                height={200}
-                                className="sm:w-[45vw] w-[90vw] h-[50vh] basis-1/2 object-contain"
-                            />
-                            <div className="basis-1/2 py-4 px-2">
-                                <h1 className="font-semibold text-yellowColor">
-                                    Adhering to EUDR Standards for Sustainable Trade
-                                </h1>
-                                <p className="text-white">
-                                    Sustainability is not just an ideal; it&#39;s a commitment we live by. As we expand
-                                    to international markets, we strongly emphasize our producers to fully adhere to the
-                                    European Union Deforestation Regulation (EUDR) standards, ensuring our coffee is
-                                    traceable and sustainably sourced. This strict compliance reassures our partners
-                                    that Marafiki coffee is not only of the highest quality but also meets the standards
-                                    required for a sustainable future. Our impact is woven into every aspect of our
-                                    business, driving meaningful change and ensuring that our work benefits the people,
-                                    places, and ecosystems behind every cup. We aim to build a coffee industry rooted in
-                                    integrity, where each sip is a step toward a more inclusive, sustainable, and
-                                    vibrant world.
-                                </p>
+                            {/* Third Section */}
+                            <div>
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                    <div
+                                        className={"relative basis-1/2 w-[90vw] group sm:w-[30vw] cursor-pointer h-[40vh]"}>
+                                        <Image
+                                            src={"/coffee-2.png"}
+                                            alt={"coffee eudr"}
+                                            width={200}
+                                            height={200}
+                                            className="sm:w-[45vw] w-[90vw] h-[50vh] basis-1/2 object-contain group-hover:opacity-20"
+                                        />
+                                        <h1 className="font-bold absolute group-hover:font-black  bottom-5 place-content-center left-8 sm:text-xl text-lg text-yellowColor">
+                                            Adhering to EUDR Standards for Sustainable Trade
+                                        </h1>
+
+                                    </div>
+                                        <div className="basis-1/2 py-4 px-2">
+                                            <p className="text-white">
+                                                Sustainability is not just an ideal; it&#39;s a commitment we live by.
+                                                As we expand
+                                                to international markets, we strongly emphasize our producers to fully
+                                                adhere to the
+                                                European Union Deforestation Regulation (EUDR) standards, ensuring our
+                                                coffee is
+                                                traceable and sustainably sourced. This strict compliance reassures our
+                                                partners
+                                                that Marafiki coffee is not only of the highest quality but also meets
+                                                the standards
+                                                required for a sustainable future. Our impact is woven into every aspect
+                                                of our
+                                                business, driving meaningful change and ensuring that our work benefits
+                                                the people,
+                                                places, and ecosystems behind every cup. We aim to build a coffee
+                                                industry rooted in
+                                                integrity, where each sip is a step toward a more inclusive,
+                                                sustainable, and
+                                                vibrant world.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
                 </div>
+
             </div>
+            );
+            }
 
-        </div>
-    );
-}
-
-export default AboutUs;
+            export default AboutUs;

@@ -14,11 +14,7 @@ function Services() {
                     className={"w-full h-[30rem] bg-black/50 flex flex-col gap-y-8 items-center justify-center top-0 left-0 absolute "}>
                     <h2 className="text-3xl font-black text-white">Welcome to Marafiki Coffee Marketing Services</h2>
                     <p className="text-xl font-semibold max-sm:hidden  text-[#d9d9d9] mt-4 sm:px-10 px-4">
-                        At Marafiki Coffee Marketing, we are passionate about connecting Tanzania&apos;s finest coffee
-                        producers with global and local markets.
-                        Our services are designed to support every step of the coffee journey, from the farmer&apos;s
-                        first harvest to the final cup. Whether you&apos;re a coffee grower, buyer, or enthusiast, we
-                        are committed to providing exceptional quality, transparency, and sustainability at every stage.
+                        We believe a fresh cup of coffee is key to good morning, and a good day, we are just happy to be a part of that!
                     </p>
                     <p className="sm:text-3xl text-xl text-yellowColor mt-4 font-bold">
                         Explore our services

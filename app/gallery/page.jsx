@@ -8,22 +8,41 @@ function Gallery() {
     const [picType,setPicType] = useState("all")
 
     const images = [
-        {photo:"/company photos/carriage-trucks.jpg",category:"transport"},
-        {photo:"/company photos/coffee-godown.jpg",category: "transport"},
-        {photo:"/company photos/coffee-godown2.jpg",category: "transport"},
-        {photo:"/company photos/coffee-measured2.jpg",category: "activities"},
-        {photo:"/company photos/coffee-trailer-full.jpg",category: "transport"},
-        {photo:"/company photos/coffee-trailer.jpg",category: "transport"},
-        {photo:"/company photos/coffee2.jpg",category: "farms"},
-        {photo:"/company photos/coffee_crop.jpg",category: "farms"},
-        {photo:"/company photos/coffee_measurement.jpg",category: "activities"},
-        {photo:"/company photos/coffee_storage.jpg",category: "transport"},
-        {photo:"/company photos/transport.jpg",category: "transport"},
-        {photo:"/coffee-plantation.jpg",category: "farms"},
+        {photo:"/company photos/carriage-trucks.jpg",category:"activities"},
+        {photo:"/company photos/coffee-godown.jpg",category:"farms"},
+        {photo:"/company photos/coffee-godown2.jpg",category:"activities"},
+        {photo:"/company photos/coffee-measured2.jpg",category:"transport"},
+        {photo:"/company photos/coffee-trailer-full.jpg",category:"farms"},
+        {photo:"/company photos/coffee-trailer.jpg",category:"activities"},
+        {photo:"/company photos/coffee2.jpg",category:"transport"},
+        {photo:"/company photos/coffee_crop.jpg",category:"transport"},
+        {photo:"/company photos/coffee_measurement.jpg",category:"farms"},
+        {photo:"/company photos/coffee_storage.jpg",category:"activities"},
+        {photo:"/company photos/transport.jpg",category:"farms"},
+        {photo:"/company photos/0409cf76-5404-4148-991f-07c5dc1f08a8.JPG",category:"activities"},
+        {photo:"/company photos/06a14268-605a-4b29-8d84-e89de18bdaf6.JPG",category:"farms"},
+        {photo:"/company photos/1a75f90c-e0c9-4d25-af19-e0ecada2a566.JPG",category:"transport"},
+        {photo:"/company photos/30983dc0-c4a4-4ed9-89d2-c316e0eb860d.JPG",category:"activities"},
+        {photo:"/company photos/343193cf-ef9f-4349-83ee-43697c93c1fd.JPG",category:"farms"},
+        {photo:"/company photos/35bf5322-7da1-4558-b5f0-831782f31492.JPG",category:"transport"},
+        {photo:"/company photos/44a4651d-31c9-4bc9-821f-1214388be9a8.JPG",category:"activities"},
+        {photo:"/company photos/4d59a6de-be98-4a18-8c99-75d0aeb2a6c7.JPG",category:"farms"},
+        {photo:"/company photos/565d0851-c3c1-4450-8e5f-7df4b9c46904.JPG",category:"transport"},
+        {photo:"/company photos/5a8b63ae-a87e-4d43-86db-397c5d30a4ee.JPG",category:"activities"},
+        {photo:"/company photos/6075ebfb-2a05-48ce-9ffe-37f1d8aaeeac.JPG",category:"farms"},
+        {photo:"/company photos/88a7f692-b59e-4aa4-a84d-3f5ea264dcb1.JPG",category:"transport"},
+        {photo:"/company photos/8c8176a3-de09-40d6-bdba-79e2debf2405.JPG",category:"activities"},
+        {photo:"/company photos/9a1bd801-c77b-4085-92a9-cbc7ec678b9b.JPG",category:"farms"},
+        {photo:"/company photos/ae357d61-5911-44d9-a2a9-ac0f76be3510.JPG",category:"transport"},
+        {photo:"/company photos/af4d8904-2c3c-4b92-578acc0aaa4e.JPG",category:"activities"},
+        {photo:"/company photos/bc1d53c3-5d92-4ab6-843a-291fc41ba6dd.JPG",category:"farms"},
+        {photo:"/company photos/c6aa01c5-e94c-4af3-811e-3c603444cb51.JPG",category:"transport"},
+        {photo:"/company photos/dcc9bf40-4333-49e6-8819-2e86468fed76.JPG",category:"activities"},
+        {photo:"/company photos/f82b1b91-2e18-4549-85e5-8a519b798b76.JPG",category:"farms"},
+        {photo:"/company photos/ff3683ff-025c-4a70-b81a-83054c7c5a3f.JPG",category:"transport"},
+    ];
 
-
-    ]
-  return (
+    return (
     <div className=''>
         <section className={'w-screen relative -mt-24'}>
            <div >
