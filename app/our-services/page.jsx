@@ -12,10 +12,8 @@ function Services() {
                        src={'/coffee-climate.jpg'}/>
                 <div
                     className={"w-full h-[30rem] bg-black/50 flex flex-col gap-y-8 items-center justify-center top-0 left-0 absolute "}>
-                    <h2 className="text-3xl font-black text-white">Welcome to Marafiki Coffee Marketing Services</h2>
-                    <p className="text-xl font-semibold max-sm:hidden  text-[#d9d9d9] mt-4 sm:px-10 px-4">
-                        We believe a fresh cup of coffee is key to good morning, and a good day, we are just happy to be a part of that!
-                    </p>
+                    <h2 className="text-3xl font-black text-white sm:px-8 px-2 ">We believe a fresh cup of coffee is key to good morning, and a good day, we are just happy to be a part of that!</h2>
+
                     <p className="sm:text-3xl text-xl text-yellowColor mt-4 font-bold">
                         Explore our services
                     </p>

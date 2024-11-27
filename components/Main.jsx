@@ -17,10 +17,10 @@ function Main({ children }) {
     const pathname = usePathname()
 
     const handleMessage = ()=>{
-        const theMessage = message + "* sent from Marafiki Coffee Website *"
+
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappURL = `https://wa.me/+255658004980?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/+255674663638?text=${encodedMessage}`;
 
 
         window.open(whatsappURL, "_blank");
@@ -132,7 +132,7 @@ function Main({ children }) {
                         <FaPaperPlane  className={'cursor-pointer'}  />
                         </button>
                     </div>
-                </div>} title="Chat with us" trigger="hover">
+                </div>} title="Chat with us" trigger="click">
 
                 <FaWhatsapp className={'text-green-500 text-4xl fixed bottom-3 right-3'} />
                 </Popover>
