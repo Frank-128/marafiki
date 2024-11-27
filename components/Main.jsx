@@ -1,21 +1,36 @@
 "use client"
-import { Drawer } from "antd";
+import {useState} from 'react';
+import { Drawer, Popover} from "antd";
 import {  useAppContext } from "./context/AppContext";
 import Navbar from "./Navbar";
-import { HiMenuAlt3 } from "react-icons/hi";
 import { FaX } from "react-icons/fa6";
 import { navlinks } from "@/constants/links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import {FaPaperPlane,  FaWhatsapp} from "react-icons/fa";
 
 
 function Main({ children }) {
     const {openSidebar,setOpenSidebar} = useAppContext()
+    const [message,setMessage] = useState("");
     const pathname = usePathname()
+
+    const handleMessage = ()=>{
+
+
+        const encodedMessage = encodeURIComponent(message);
+        const whatsappURL = `https://wa.me/+255674663638?text=${encodedMessage}`;
+
+
+        window.open(whatsappURL, "_blank");
+        setMessage("")
+    }
+
+
     return (
         
-        <main>
+        <main className={''}>
             <Navbar />
             <section className="pt-24 min-h-screen">
             {children}
@@ -94,7 +109,7 @@ function Main({ children }) {
                         navlinks.map((item, i) => (
 
                             <li key={i}>
-                            <Link onClick={()=>setOpenSidebar(false)} className={`${pathname == item.link && "text-redColor underline underline-redColor"}`} href={item.link}>
+                            <Link onClick={()=>setOpenSidebar(false)} className={`${pathname === item.link && "text-redColor underline underline-redColor"}`} href={item.link}>
                    {item.name}
                    </Link>
         </li>
@@ -106,6 +121,22 @@ function Main({ children }) {
     <FaX  onClick={()=>setOpenSidebar(false)} className="absolute left-1/2 bottom-0 my-4 bg-redColor text-white font-black h-6 w-6 rounded-full p-2" />
 
         </Drawer>
+            <div>
+                <Popover content={<div>
+
+                    <div className={'flex items-center gap-x-2'}>
+
+                    <input onChange={(e)=>setMessage(e.target.value)} className={'p-2 border-[1px] rounded focus:outline-yellowColor'} />
+                        <button onClick={handleMessage} disabled={message.trim() === ""}>
+
+                        <FaPaperPlane  className={'cursor-pointer'}  />
+                        </button>
+                    </div>
+                </div>} title="Chat with us" trigger="hover">
+
+                <FaWhatsapp className={'text-green-500 text-4xl fixed bottom-3 right-3'} />
+                </Popover>
+            </div>
         </main>
         
     );

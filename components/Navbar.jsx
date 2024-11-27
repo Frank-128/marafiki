@@ -15,8 +15,8 @@ function Navbar() {
 
   return (
 
-<nav className="w-screen !z-[99] absolute bg-transparent h-24    sm:items-center  justify-between flex  px-2 py-6">
-    <div className="flex  sm:items-center max-sm:justify-between gap-2  text-white">
+<nav className="w-screen !z-[99] absolute bg-transparent h-24    items-center  justify-between flex  px-6 py-6">
+    <div className="flex  items-center max-lg:justify-between gap-2  text-white">
         <Image width={100} height={100} className="w-12 h-12 object-contain" src={"/logo.png"} alt="logo" />
        <div className={'flex flex-col items-center'}>
         <span className="font-bold text-xl leading-none">Marafiki</span>
@@ -24,15 +24,15 @@ function Navbar() {
        </div>
     </div>
 
-    <HiMenuAlt3 fontSize={30} className='block text-redColor   text-3xl' onClick={()=>setOpenSidebar(true)} />
+    <HiMenuAlt3 fontSize={30} className='lg:hidden text-redColor   text-3xl' onClick={()=>setOpenSidebar(true)} />
 
-    <ul className="sm:gap-x-10 sm:flex hidden">
+    <ul className="lg:gap-x-10 lg:flex hidden">
 
     {
         navlinks.map((item,i)=>(
 
             <li key={i} className='text-lg text-white'>
-                   <Link className={`${pathname == item.link && "text-yellowColor underline underline-offset-8 font-bold decoration-white"}`} href={item.link}>
+                   <Link className={`${pathname === item.link && "text-yellowColor underline underline-offset-8 font-bold decoration-white"}`} href={item.link}>
                    {item.name}
                    </Link>
         </li>
@@ -40,7 +40,7 @@ function Navbar() {
     }
 
 </ul>
-<div className={'max-sm:hidden'}/>
+<div className={'max-lg:hidden'}/>
     
 
 </nav>

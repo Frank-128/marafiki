@@ -5,11 +5,10 @@ import ValuesCard from "@/components/ValuesCard";
 import VissionCard from "@/components/VisionCard";
 import { services } from "@/constants/services";
 import { values } from "@/constants/values";
-import Image from "next/image";
 import { useRef,useEffect } from "react";
 import gsap from "gsap";
-import {Carousel} from "antd";
-import HomeCarousel from "@/components/HomeCarousel";
+import SwiperCarousel from "@/components/SwiperCarousel";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -127,19 +126,20 @@ export default function Home() {
                 <div className={""}>
 
 
-                <HomeCarousel />
+                {/*<HomeCarousel />*/}
+                    <SwiperCarousel/>
                 </div>
                 <div className="absolute top-[10%] left-0  items-center  flex flex-col  py-4 gap-8 sm:px-36 px-4">
                     <span className="font-light text-4xl sm:text-2xl text-yellowColor">Marafiki Coffee Marketing</span>
                     <span ref={spanRef} className="text-white opacity-90 sm:text-7xl text-center font-black text-2xl ">Crafting a Global Coffee Community, One Relationship at a Time</span>
                     <span className="text-[#d9d9d9] opacity-90 sm:text-xl font-light text-sm text-center">
-                    Connecting Tanzania&apos;s finest coffee to the world through a transparent, sustainable &amp; high
-                    quality coffee value chain.
+                    Building a reliable, responsible and sustainable coffee supply chain on principles of transparency,quality and fair trade. The future of our coffee is what sets us apart.
                     </span>
-                    <div
+                    <Link
+                        href={'/our-services'}
                         className="border-white border-2  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-white px-2 py-1 w-32">
                         Discover More
-                    </div>
+                    </Link>
                 </div>
 
 
@@ -200,7 +200,7 @@ export default function Home() {
                     <div className={"text-white text-4xl text-center font-black"}>From Farm to Cup,<br/> We Deliver Quality</div>
                 </div>
 
-                    <div ref={sectionRef} className="sm:grid-cols-3 basis-3/4 grid-cols-1 grid gap-8">
+                    <div ref={sectionRef} className="lg:grid-cols-3 sm:grid-cols-2 basis-3/4 grid-cols-1 grid gap-8">
                     {
                         services.map((item,i)=><ServiceCard ref={(el) => (serviceCardsRef.current[i] = el)} key={i} title={item.title} id={item.id} desc={item.description.substring(0,70)+"..."} icon={item.icon} className="transition-all duration-500 ease-out opacity-0 transform translate-y-4" />)
                     }
