@@ -17,10 +17,10 @@ function Main({ children }) {
     const pathname = usePathname()
 
     const handleMessage = ()=>{
-
+        const theMessage = message + "* sent from Marafiki Coffee Website *"
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappURL = `https://wa.me/+255674663638?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/+255658004980?text=${encodedMessage}`;
 
 
         window.open(whatsappURL, "_blank");
