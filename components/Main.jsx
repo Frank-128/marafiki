@@ -134,7 +134,7 @@ function Main({ children }) {
                     </div>
                 </div>} title="Chat with us" trigger="click">
 
-                <FaWhatsapp className={'text-green-500 text-4xl fixed bottom-3 right-3'} />
+                <FaWhatsapp className={'text-green-500 text-4xl fixed bottom-3 right-8'} />
                 </Popover>
             </div>
         </main>
