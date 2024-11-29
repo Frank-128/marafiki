@@ -20,7 +20,7 @@ function Main({ children }) {
 
 
         const encodedMessage = encodeURIComponent(message);
-        const whatsappURL = `https://wa.me/+255674663638?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/+255628335973?text=${encodedMessage}`;
 
 
         window.open(whatsappURL, "_blank");
