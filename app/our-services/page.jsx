@@ -1,25 +1,55 @@
+"use client"
 import { services } from "@/constants/services";
 import Image from "next/image";
-import React from "react";
+import React,{useEffect,useRef} from "react";
 import { FaBullseye } from "react-icons/fa";
+import gsap from 'gsap';
 
 function Services() {
+    const h2Ref = useRef(null);
+    const pRef = useRef(null);
+    const sectionRef = useRef(null); // For scoping animations in GSAP context
+
+    useEffect(() => {
+        // Use GSAP context for cleanup and scoping
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline();
+            // Animate the h2
+            tl.fromTo(
+                h2Ref.current,
+                { y: 50, opacity: 0 }, // Initial state
+                { y: 0, opacity: 1, duration: 1, ease: "power3.out" } // Animation
+            );
+            // Animate the p
+            tl.fromTo(
+                pRef.current,
+                { y: 50, opacity: 0 }, // Initial state
+                { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
+                "-=0.5" // Overlap with the previous animation
+            );
+        }, sectionRef);
+
+        // Cleanup GSAP context on component unmount
+        return () => ctx.revert();
+    }, []);
+
     return (
         <div className=" flex flex-col  ">
 
             <section className={'w-screen relative -mt-24 our-services-welcome text-center '}>
                 <Image width={1920} height={600} className={"object-cover h-[30rem] w-screen"} alt={"coffee crop"}
                        src={'/coffee-climate.jpg'}/>
-                <div
-                    className={"w-full h-[30rem] bg-black/50 flex flex-col gap-y-8 items-center justify-center top-0 left-0 absolute "}>
-                    <h2 className="text-3xl font-black text-white sm:px-8 px-2 ">We believe a fresh cup of coffee is key to good morning, and a good day, we are just happy to be a part of that!</h2>
+                <div ref={sectionRef}
 
-                    <p className="sm:text-3xl text-xl text-yellowColor mt-4 font-bold">
+                    className={"w-full h-[30rem] bg-black/50 flex flex-col gap-y-8 items-center justify-center top-0 left-0 absolute "}>
+                    <h2 ref={h2Ref} className="text-3xl opacity-0 font-black text-white sm:px-8 px-2 ">We believe a fresh cup of coffee is key to good morning, and a good day, we are just happy to be a part of that!</h2>
+
+                    <p ref={pRef} className="sm:text-3xl opacity-0 text-xl text-yellowColor mt-4 font-bold">
                         Explore our services
                     </p>
                     </div>
             </section>
-            <div className={'sm:p-6 p-2 bg-deepGreenColor space-y-10'}>
+            <div className={'sm:px-6 px-2 bg-deepGreenColor py-24 space-y-10'}>
             {services.map((item, i) => (
                 <div
                     key={i}
@@ -150,6 +180,12 @@ function Services() {
                         healthy of our coffee chain depends on both the farmer and
                         last consumer.
                     </p>
+                    <Image src={"/company photos/35bf5322-7da1-4558-b5f0-831782f31492.JPG"} alt={"export details"}
+                           width={1920}
+                           height={1080}
+                           quality={100}
+                           className="w-full h-[25rem] object-contain"
+                    />
                 </div>
         </div>
 );

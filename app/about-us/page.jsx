@@ -117,10 +117,17 @@ function AboutUs() {
                     <Image src={'/coffee-plantation.jpg'} width={500} height={600}
                            className={'absolute  top-0 left-0 w-full h-full object-cover '} alt={'coffee plantation'}/>
                     <div className={'bg-black/60 absolute inset-0 w-full h-full sm:px-20 px-10  sm:py-10 py-4'}>
-                        <h1 className={'text-white text-3xl max-sm:text-xl  font-black'}>Trusted by the biggest
-                            companies</h1>
+                        <h1 className={'text-white text-3xl max-sm:text-xl  font-black'}>
+                            Our trusted Partners
+                            </h1>
                         <div className=" flex  w-full justify-between">
                             <Image
+                                alt="JAS"
+                                src={"/JAS.png"}
+                                width={200}
+                                height={200}
+                                className="object-contain w-12 h-12 sm:w-40 sm:h-40"
+                            /><Image
                                 alt="organc color"
                                 src={"/organic_color.jpg"}
                                 width={200}
