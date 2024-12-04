@@ -76,8 +76,9 @@ function Services() {
             </div>
                 <div className="space-y-5 bg-greenColor px-10 pt-24 pb-12">
                     <h1 className="font-black text-2xl text-yellowColor">Our Clients</h1>
-                    <div className="text-lg text-[#d1d1d1]">
-                        Our Commitment to Buyers We serve a broad range of
+                    <h2 className={"font-semibold text-lg text-white/80"}>Our Commitment to Buyers</h2>
+                    <div className="text-base text-[#d1d1d1]">
+                         We serve a broad range of
                         international buyers, including importers, specialty coffee
                         roasters, cafés, and coffee shops seeking premium Tanzanian
                         coffee. These buyers trust us to source high- quality,
@@ -128,6 +129,12 @@ function Services() {
                             </h2>
                         </div>
                     </div>
+                    <Image src={"/company photos/35bf5322-7da1-4558-b5f0-831782f31492.JPG"} alt={"export details"}
+                           width={1920}
+                           height={1080}
+                           quality={100}
+                           className="w-full h-[25rem] object-contain"
+                    />
                 </div>
                 <div className="pt-24 pb-12 px-10 space-y-6 bg-deepGreenColor">
                     <h1 className="font-black text-yellowColor text-2xl">Our Sellers</h1>
@@ -180,12 +187,7 @@ function Services() {
                         healthy of our coffee chain depends on both the farmer and
                         last consumer.
                     </p>
-                    <Image src={"/company photos/35bf5322-7da1-4558-b5f0-831782f31492.JPG"} alt={"export details"}
-                           width={1920}
-                           height={1080}
-                           quality={100}
-                           className="w-full h-[25rem] object-contain"
-                    />
+
                 </div>
         </div>
 );

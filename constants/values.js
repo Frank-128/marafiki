@@ -16,5 +16,11 @@ export const values = [
       "desc": "Because coffee is our main business, quality is our top priority. We really value everything it takes to bring up the best quality coffee. Before any coffee bean is shipped, our expert quality controllers rigorously oversee the process. Pre-loading samples are randomly drawn from multiple points around the stack, ensuring a thorough and representative sampling. During the loading phase, we extract samples from 100% of the bags, eliminating any chance of sampling errors. Each sample undergoes comprehensive analysis to ensure it meets the specified quality. To further safeguard against discrepancies or claims, we retain these samples for three months, offering our buyers the assurance of full traceability. Upon request, we can seal the samples, underscoring our commitment to both transparency and excellence.",
       "variant": "quality",
       "link":"/about-us/#quality"
+    },
+    {
+        "title": "Fair Trade",
+        "desc": "It takes a lot of expertise to produce the high-quality beans that end up as your favorite cup of coffee. But the life of the smallholder coffee farmer behind your morning brew is far from easy. 90% of the Tanzanian coffee comes from the small holder farmers, they're the engine of the coffee production in Tanzania just like other parts of the world. Unfortunately, due to coffee price volatility & ongoing challenges of climate crisis small holder farmers have to struggle with lower incomes. It is for this reason that we advocate for fair trade and most of our producers are now Fair Trade Certified. By choosing Fairtrade certified coffee, you know that the beans are grown using fair trade rigorous standards, which support farmers and their communities and help protect the environment.",
+        "variant": "fair-trade",
+        "link": "/about-us/#fair-trade"
     }
   ];
