@@ -17,7 +17,7 @@ function ValuesCard({title,desc,variant,readMore=false,link}) {
         }
       };
     return (
-    <div id={link} className={`${getBackgroundClass(variant)} shadow-md rounded ${readMore ? 'h-[16rem]':'h-[30rem]'} w-[15rem] sm:w-[20rem]  p-4`}>
+    <div id={link} className={`${getBackgroundClass(variant)} shadow-md rounded ${readMore ? 'h-[16rem]':'h-[30rem]'} w-[80vw] sm:w-[20rem]  p-4`}>
         <h1 className='text-white font-black text-xl'>{title}</h1>
         <p className='text-sm p-2 text-[#d9d9d9]'>{desc}</p>
         {readMore && <Link href={link} className='rounded border p-2 my-2 text-center shadow-sm text-white font-black cursor-pointer'>Read More</Link>}
