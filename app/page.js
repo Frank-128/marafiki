@@ -182,6 +182,12 @@ export default function Home() {
                             for years to come. So whether you’re a small business or a large roaster looking for a
                             consistent source of premium Tanzanian coffee, we’re here to connect, support, and grow
                             together as friends (marafiki). Let&apos;s embark on this journey together
+                            <div className={"my-8"}>
+                                Why Choose Us:
+                                Steady supply &amp; Longterm relationships: With strong connections to coffee producers,
+                                cooperatives, and estates across Tanzania, we guarantee a steady and reliable supply of high-
+                                quality coffee, even during challenging seasons.
+                            </div>
                         </div>
                     </div>
                 </div>
