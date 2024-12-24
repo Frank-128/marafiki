@@ -148,12 +148,21 @@ export default function Home() {
             <div className="" id="about-us">
                 <div className="flex sm:px-20 px-2 sm:flex-row flex-col">
 
-                    <div className="bg-greenColor sm:-mx-20 -mx-2 flex sm:flex-row flex-col px-4 py-10">
+                    <div className="bg-greenColor sm:-mx-20 -mx-2 flex  sm:flex-row flex-col px-4 py-10">
                         <div className={"basis-1/2 space-y-8"}>
                         <h2 className=" font-semibold text-2xl text-yellowColor">About Us!</h2>
-                            <h1 className={"sm:text-5xl text-2xl text-white "}>
-                                A team of passionate coffee enthusiasts
-                            </h1>
+                        <h1 className={"sm:text-5xl text-2xl text-white "}>
+                            A team of passionate coffee enthusiasts
+                        </h1>
+                        
+                        <a 
+                        href={'/business_profile.pdf'}
+                        download={"MarafikiBusinessProfile.pdf"}
+                        className="border-yellowColor border-2 block  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-yellowColor px-2 py-1 w-fit"
+                        >
+                        Download bussiness profile
+                            </a>
+
                         </div>
 
                         <div ref={aboutUsRef} className={"basis-1/2 px-3 text-white"}>
@@ -187,7 +196,7 @@ export default function Home() {
             </div>
             <div id="values" className={"bg-black/80 sm:-mx-20 py-10 w-full"}>
                 <h1 className="font-black  text-center text-3xl text-white">Our Values</h1>
-                <div className="w-full flex items-center flex-col sm:flex-row justify-around py-5 gap-y-7">
+                <div className="w-full grid max-w:sm:grid-cols-2 grid-cols-4  py-5  place-items-center gap-y-7">
                     { values.map((item,i)=><ValuesCard link={item.link} readMore={true} key={i} title={item.title} desc={item.desc.substring(0,200)+"..."} variant={item.variant} />)}
                 
                 </div>
