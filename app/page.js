@@ -154,14 +154,14 @@ export default function Home() {
                         <h1 className={"sm:text-5xl text-2xl text-white "}>
                             A team of passionate coffee enthusiasts
                         </h1>
-                        
+{/*                         
                         <a 
                         href={'/business_profile.pdf'}
                         download={"MarafikiBusinessProfile.pdf"}
                         className="border-yellowColor border-2 block  cursor-pointer hover:scale-105 transition duration-300 hover:shadow-2xl text-yellowColor px-2 py-1 w-fit"
                         >
                         Download bussiness profile
-                            </a>
+                            </a> */}
 
                         </div>
 
