@@ -21,7 +21,66 @@ function Blog() {
           </div>
 
         </section>
+        <article class="bg-white rounded-lg shadow-lg p-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                2025 Q1 Coffee Analysis: The Road to Crop ‘25
+            </h1>
 
+            <p class="text-gray-600 mb-6">
+                Coffee prices remain as unpredictable as ever. While some businesses are adapting, others are still searching for ways to stay afloat. Last week, Arabica futures fluctuated within a narrow 25-cent-per-pound range before closing at 391.40 c/lb, reflecting a 3.8% increase. Robusta prices in London followed a similar pattern, rising by 2.2% to 5,515 USD per metric ton. The market’s momentum, it seems, has taken a well-earned coffee break.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+                Is a Return to Stability Possible?
+            </h2>
+            <p class="text-gray-600 mb-6">
+                Very unlikely! The volatility we’re witnessing isn’t a passing phase. Once bitten, twice shy — businesses must rethink their strategies and adapt to the new normal. The days of expecting predictable prices are gone. It’s time for actionable solutions.
+            </p>
+            <p class="text-gray-600 mb-6">
+                At <span class="font-medium">Marafiki Coffee Marketing</span>, we’ve been proactive. For the past two years, we’ve partnered with buyers through forward contracting for Tanzanian Robusta. This strategy provides producers with a guaranteed market while offering buyers a reliable supply chain. This direct link has been a win-win model that shields both sides from the whims of price swings. It is an old tool that has been used in trade and turned out to be useful in our case.
+            </p>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+                Key Events Shaping Tanzania’s Coffee Landscape
+            </h2>
+            <p class="text-gray-600 mb-4">
+                The last month has seen significant developments for Tanzania’s coffee industry:
+            </p>
+            <ol class="list-decimal list-inside text-gray-600 mb-6 space-y-4">
+                <li>
+                    <span class="font-medium">The 3rd G25 African Coffee Summit & 21st Africa Fine Coffees Conference</span><br>
+                    These back-to-back events brought together influential voices, including keynote speakers from organizations like the International Coffee Organization (ICO), Rainforest Alliance (RFA), and the Specialty Coffee Association (SCA). Discussions focused on reshaping Africa’s coffee narrative, promoting sustainability, and unlocking new market opportunities. The energy from these conferences has injected fresh momentum into Tanzania’s coffee sector.
+                </li>
+                <li>
+                    <span class="font-medium">Weather Patterns and Harvest Outlook</span><br>
+                    Weather has been dynamic across coffee-growing regions. January saw hot and dry conditions in the North and Lake Zones, which persisted until mid-February. Since then, cooler temperatures and consistent rainfall have improved soil moisture levels. Similarly, the Southern Highlands (Mbeya, Iringa, and Rukwa) experienced steady rainfall, creating ideal conditions for both Robusta and Arabica crops. As a result, a higher harvest volume is anticipated this season compared to last year.
+                </li>
+                <li>
+                    <span class="font-medium">Political Landscape: Calm Amid Campaigning</span><br>
+                    With Tanzania’s general elections scheduled for later this year, the political climate is gradually heating up. Campaigning has begun, with most political parties announcing their candidates. Despite the significance of the elections, Tanzania remains a beacon of peace and stability, ensuring business continuity without disruption.
+                </li>
+                <li>
+                    <span class="font-medium">Logistics: Port Developments on Track</span><br>
+                    There’s been no major disruption at the Dar es Salaam Port since January. Following its management takeover by DP World, expansion projects are underway, promising enhanced capacity and operational efficiency. Simultaneously, development at the Tanga and Bagamoyo ports aims to decongest Dar es Salaam and offer diversified logistics solutions. This is a positive step for coffee exporters seeking faster and more reliable shipping routes.
+                </li>
+            </ol>
+
+            <hr class="my-8 border-gray-300">
+
+            <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">
+                Looking Ahead: What’s Next for Robusta?
+            </h2>
+            <p class="text-gray-600 mb-6">
+                The Robusta coffee season is set to kick off in mid-May. With a month to go, companies have ample time to strategize and secure their coffee needs. Higher yields compared to last year are expected, backed by favorable weather conditions and improved farm management practices.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Moreover, 2025 being an election year may further contribute to a stable business environment, fostering confidence among investors and traders.
+            </p>
+            <p class="text-gray-600 mb-6">
+                Stay tuned for our upcoming articles as we continue to bring you in-depth insights and updates. At <span class="font-medium">Marafiki Coffee Marketing</span>, we’re committed to ensuring our partners are always one step ahead.
+            </p>
+        </article>
+    
 
         {/* Blog Content */}
         <article className="space-y-16 px-12 pt-24 pb-12 bg-deepGreenColor">
