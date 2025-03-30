@@ -12,10 +12,7 @@ function Blog() {
               className={"w-full h-[30rem] bg-black/50 flex flex-col gap-y-8 items-center justify-center top-0 left-0 absolute "}>
             <header className="text-center ">
               <h1 className="text-4xl font-bold text-white">Welcome to Marafiki Coffee Insights</h1>
-              <p className="text-xl text-yellowColor mt-2">
-                Discover the latest updates and insights on Tanzania’s coffee industry and Marafiki Coffee Marketing’s
-                journey.
-              </p>
+             
             </header>
 
           </div>
@@ -27,16 +24,83 @@ function Blog() {
         <article className="space-y-16 px-12 pt-24 pb-12 bg-deepGreenColor">
       <div className="space-y-8">
           <div className={'border-white py-4 space-y-6 border-b-2'}>
-            <h3 className="text-xl font-medium text-yellow-400">2025 Q1 Coffee Analysis: The Road to Crop ‘25</h3>
-            <i className={'text-yellow-400/65 text-sm'}>29 March 2025</i>
+            <h3 className="text-xl font-medium text-yellowColor">2025 Q1 Coffee Analysis: The Road to Crop ‘25</h3>
+            <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
             <p className={'text-white'}>
               Coffee prices remain as unpredictable as ever. While some businesses are adapting, others are still searching for ways to stay afloat. Last week, Arabica futures fluctuated within a narrow 25-cent-per-pound range before closing at 391.40 c/lb, reflecting a 3.8% increase. Robusta prices in London followed a similar pattern, rising by 2.2% to 5,515 USD per metric ton. The market’s momentum, it seems, has taken a well-earned coffee break.
             </p>
           </div>
+          <div className="space-y-8">
+  <div className={'border-white py-4 space-y-6 border-b-2'}>
+    <h3 className="text-xl font-medium text-yellowColor">2025 Q1 Coffee Analysis: The Road to Crop ‘25</h3>
+    <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
+   
+  </div>
+
+  <div className={'border-white py-4 space-y-6 border-b-2'}>
+    <h3 className="text-xl font-medium text-yellowColor">Is a Return to Stability Possible?</h3>
+    <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
+   
+  </div>
+
+  <div className={'border-white py-4 space-y-6 border-b-2'}>
+    <h3 className="text-xl font-medium text-yellowColor">Key Events Shaping Tanzania’s Coffee Landscape</h3>
+    <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
+    <p className="text-xl text-yellowColor mt-2">
+                Discover the latest updates and insights on Tanzania’s coffee industry and Marafiki Coffee Marketing’s
+                journey.
+              </p>
+    <p className={'text-white'}>
+      Coffee prices remain as unpredictable as ever. While some businesses are adapting, others are still searching for ways to stay afloat. Last week, Arabica futures fluctuated within a narrow 25-cent-per-pound range before closing at 391.40 c/lb, reflecting a 3.8% increase. Robusta prices in London followed a similar pattern, rising by 2.2% to 5,515 USD per metric ton. The market’s momentum, it seems, has taken a well-earned coffee break.
+    </p>
+    <p className={'text-white'}>
+      Very unlikely! The volatility we’re witnessing isn’t a passing phase. Once bitten, twice shy — businesses must rethink their strategies and adapt to the new normal. The days of expecting predictable prices are gone. It’s time for actionable solutions.
+    </p>
+    <p className={'text-white'}>
+      At <span className="font-medium">Marafiki Coffee Marketing</span>, we’ve been proactive. For the past two years, we’ve partnered with buyers through forward contracting for Tanzanian Robusta. This strategy provides producers with a guaranteed market while offering buyers a reliable supply chain. This direct link has been a win-win model that shields both sides from the whims of price swings. It is an old tool that has been used in trade and turned out to be useful in our case.
+    </p>
+    <p className={'text-white'}>
+      The last month has seen significant developments for Tanzania’s coffee industry:
+    </p>
+    
+    <ol className="list-decimal list-inside text-white space-y-4">
+      <li>
+        <span className="font-medium">The 3rd G25 African Coffee Summit & 21st Africa Fine Coffees Conference</span><br />
+        These back-to-back events brought together influential voices, including keynote speakers from organizations like the International Coffee Organization (ICO), Rainforest Alliance (RFA), and the Specialty Coffee Association (SCA). Discussions focused on reshaping Africa’s coffee narrative, promoting sustainability, and unlocking new market opportunities. The energy from these conferences has injected fresh momentum into Tanzania’s coffee sector.
+      </li>
+      <li>
+        <span className="font-medium">Weather Patterns and Harvest Outlook</span><br />
+        Weather has been dynamic across coffee-growing regions. January saw hot and dry conditions in the North and Lake Zones, which persisted until mid-February. Since then, cooler temperatures and consistent rainfall have improved soil moisture levels. Similarly, the Southern Highlands (Mbeya, Iringa, and Rukwa) experienced steady rainfall, creating ideal conditions for both Robusta and Arabica crops. As a result, a higher harvest volume is anticipated this season compared to last year.
+      </li>
+      <li>
+        <span className="font-medium">Political Landscape: Calm Amid Campaigning</span><br />
+        With Tanzania’s general elections scheduled for later this year, the political climate is gradually heating up. Campaigning has begun, with most political parties announcing their candidates. Despite the significance of the elections, Tanzania remains a beacon of peace and stability, ensuring business continuity without disruption.
+      </li>
+      <li>
+        <span className="font-medium">Logistics: Port Developments on Track</span><br />
+        There’s been no major disruption at the Dar es Salaam Port since January. Following its management takeover by DP World, expansion projects are underway, promising enhanced capacity and operational efficiency. Simultaneously, development at the Tanga and Bagamoyo ports aims to decongest Dar es Salaam and offer diversified logistics solutions. This is a positive step for coffee exporters seeking faster and more reliable shipping routes.
+      </li>
+    </ol>
+  </div>
+
+  <div className={'border-white py-4 space-y-6 border-b-2'}>
+    <h3 className="text-xl font-medium text-yellowColor">Looking Ahead: What’s Next for Robusta?</h3>
+    <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
+    <p className={'text-white'}>
+      The Robusta coffee season is set to kick off in mid-May. With a month to go, companies have ample time to strategize and secure their coffee needs. Higher yields compared to last year are expected, backed by favorable weather conditions and improved farm management practices.
+    </p>
+    <p className={'text-white'}>
+      Moreover, 2025 being an election year may further contribute to a stable business environment, fostering confidence among investors and traders.
+    </p>
+    <p className={'text-white'}>
+      Stay tuned for our upcoming articles as we continue to bring you in-depth insights and updates. At <span className="font-medium">Marafiki Coffee Marketing</span>, we’re committed to ensuring our partners are always one step ahead.
+    </p>
+  </div>
+</div>
 
           <div className={'border-white py-4 space-y-6 border-b-2'}>
-            <h3 className="text-xl font-medium text-yellow-400">Is a Return to Stability Possible?</h3>
-            <i className={'text-yellow-400/65 text-sm'}>29 March 2025</i>
+            <h3 className="text-xl font-medium text-yellowColor">Is a Return to Stability Possible?</h3>
+            <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
             <p className={'text-white'}>
               Very unlikely! The volatility we’re witnessing isn’t a passing phase. Once bitten, twice shy — businesses must rethink their strategies and adapt to the new normal. The days of expecting predictable prices are gone. It’s time for actionable solutions.
             </p>
@@ -46,8 +110,8 @@ function Blog() {
           </div>
 
           <div className={'border-white py-4 space-y-6 border-b-2'}>
-            <h3 className="text-xl font-medium text-yellow-400">Key Events Shaping Tanzania’s Coffee Landscape</h3>
-            <i className={'text-yellow-400/65 text-sm'}>29 March 2025</i>
+            <h3 className="text-xl font-medium text-yellowColor">Key Events Shaping Tanzania’s Coffee Landscape</h3>
+            <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
             <p className={'text-white'}>
               The last month has seen significant developments for Tanzania’s coffee industry:
             </p>
@@ -72,8 +136,8 @@ function Blog() {
         </div>
 
         <div className={'border-white py-4 space-y-6 border-b-2'}>
-          <h3 className="text-xl font-medium text-yellow-400">Looking Ahead: What’s Next for Robusta?</h3>
-          <i className={'text-yellow-400/65 text-sm'}>29 March 2025</i>
+          <h3 className="text-xl font-medium text-yellowColor">Looking Ahead: What’s Next for Robusta?</h3>
+          <i className={'text-yellowColor/65 text-sm'}>29 March 2025</i>
           <p className={'text-white'}>
             The Robusta coffee season is set to kick off in mid-May. With a month to go, companies have ample time to strategize and secure their coffee needs. Higher yields compared to last year are expected, backed by favorable weather conditions and improved farm management practices.
           </p>
